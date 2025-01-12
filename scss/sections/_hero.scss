@@ -1,56 +1,53 @@
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img/mobile/hero-mobile@1x.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-position: center;
+ background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),url(../img/mobile/working_background-mobile@1x.webp);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../img/mobile/hero-mobile@2x.webp);
+      background-image: linear-gradient(  rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), url(../img/mobile/working_background-mobile@2x.webp);
     }
 
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../img/tablet/hero-tablet@1x.webp);
 
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../img/tablet/hero-tablet@2x.webp);
-            }
+  @media screen and (min-width:768px){
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../img/tablet/working_background-tablet@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(  rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), url(../img/tablet/working_background-tablet@2x.webp);
     }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),url(../img/desktop/working_background-desktop@1x.webp);
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../img/desktop/hero-desktop@1x.webp);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../img/desktop/hero-desktop@2x.webp);
-        }
-
-        @media screen and (min-width: 1200px) {
-            padding: 200px 0;
-        }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(  rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), url(../img/desktop/working_background-desktop@2x.webp);
     }
+  }
+
 
         &__title {
             color: $main-backround;
